@@ -6,7 +6,7 @@
     "oao": "lib/index.js"
   },
   "scripts": {
-    "build": "yarn lint && yarn flow && yarn compile && yarn test && yarn xxl",
+    "build": "yarn compile",
     "travis": "yarn test",
     "lint": "eslint src",
     "flow": "flow check || exit 0",

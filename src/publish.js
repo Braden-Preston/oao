@@ -140,7 +140,7 @@ const run = async ({
 
     // Commit, tag and push
     if (gitCommit) {
-      await gitCommitChanges(`v${nextVersion}`);
+      await gitCommitChanges(`\":package: release - v${nextVersion}\"`);
       await gitAddTag(`v${nextVersion}`);
       await gitPushWithTags();
     }
